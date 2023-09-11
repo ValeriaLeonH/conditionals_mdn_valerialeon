@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditional 1 </title>
+</head>
+<body>
+  <script>
+    let response;
+    let score = 75;
+    let machineActive = false;
+    
+    // Add your code here
+    if(machineActive === true){
+    
+    if(score < 0 || score > 100){
+      response = "This is not possible, an error has occurred.";
+      console.log(response);
+    } else if (score >= 0 && score <= 19){
+      response = "That was a terrible score — total fail";
+      console.log(response);
+    } else if (score >=20 && score <=39){
+      response = "You know some things, but it\'s a pretty bad score. Needs improvement.";
+      console.log(response);
+    } else if (score >=40 && score <=69){
+      response = "You did a passable job, not bad!";
+      console.log(response);
+    } else if (score >=70 && score <=89){
+      response = "That\'s a great score, you really know your stuff.";
+      console.log(response);
+    } else if (score >=90 && score <=100){
+      response =  "What an amazing score! Did you cheat? Are you for real?";
+      console.log(response);
+    } 
+    } else if (machineActive === false){
+      response = "Please, active the machine";
+      console.log(response);
+    } 
+
+  </script>
+</body>
+</html>
